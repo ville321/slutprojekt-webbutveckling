@@ -2,12 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 body {
   margin: 0;
-  background: black;
 }
 
-nav {
+.container {
+  background-image: url(../images/bg1.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.5s;
+  z-index: 1000;
 }
 
 .nav-links {
@@ -30,7 +40,37 @@ nav {
   font-size: 1.5em;
 }
 .nav-links span {
-  border-bottom: 2px solid white;
-  border-width: 2px;
-  padding: 1.5em;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1em;
+}
+
+.sticky {
+  background-color: white;
+}
+.sticky a {
+  color: black;
+}
+.sticky #book {
+  border: black solid 1px;
+}
+.sticky span {
+  border-bottom: 1px solid black;
+}
+
+.section1 {
+  height: 100vh;
+}
+.section1 img {
+  position: relative;
+  width: 25%;
+  left: 50%;
+  padding: 5em;
+}
+.section1 h1, .section1 p {
+  font-family: "Cutive mono";
+}
+.section1 .section1-container {
+  display: flex;
+  justify-content: center;
+  width: 100vh;
 }/*# sourceMappingURL=style.css.map */
