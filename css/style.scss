@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 
-.container {
+.main-nav-container {
     background-image: url(../images/bg1.jpg);
     background-size: cover;
     height: 100vh;
@@ -17,8 +17,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    transition: background-color 0.5s;
     z-index: 1000;
+    max-height: 15%;
+}
+
+#gallery-nav, .navbar {
+    transition: max-height 0.8s, background-color 0.8s;
 }
 
 .nav-links {
@@ -49,38 +53,33 @@ body {
     }
 }
 
-.sticky {
-    background-color: white;
-    a {
-        color: black;
-    }
+.sticky, #gallery-nav {
+    background: white;
 
-    #book {
-        border: black solid 1px;
+    a {
+        color: black
     }
 
     span {
         border-bottom: 1px solid black;
     }
+
+    #book {
+        border: black solid 1px;
+    }
 }
 
-.section1 {
-    height: 100vh;
+.sticky {
+    max-height: 10%;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
 
     img {
-        position: relative;
-        width: 25%;
-        left: 50%;
-        padding: 5em;
-    }
-
-    h1, p {
-        font-family: "Cutive mono";
-    }
-
-    .section1-container {
-        display: flex;
-        justify-content: center;
-        width: 100vh;
+        max-width: 100%;
+        height: auto;
     }
 }
