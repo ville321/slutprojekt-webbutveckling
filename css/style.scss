@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+:root {
+    --grey: rgb(51, 51, 51);
+}
 
 body {
     margin: 0;
@@ -57,15 +62,15 @@ body {
     background: white;
 
     a {
-        color: black
+        color: var(--grey);
     }
 
     span {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid var(--grey);
     }
 
     #book {
-        border: black solid 1px;
+        border: var(--grey) solid 1px;
     }
 }
 
@@ -76,10 +81,76 @@ body {
 #gallery {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
 
     img {
         max-width: 100%;
         height: auto;
     }
+}
+
+section {
+
+    .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    }
+
+    .info {
+        width: 30em;
+        padding-right: 3em;
+    }
+
+    img {
+        max-width: 30em;
+        height: auto;
+    }
+
+    h1, p {
+        font-family: "Sorts Mill Goudy", serif;
+    }
+}
+
+footer {
+    margin-top: 10em;
+
+    .contact-content, .contact-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    .contact-content {
+        border: 3px solid black;
+    }
+    
+        h1, p {
+            font-family: "Sorts Mill Goudy", serif;
+        }
+
+        h1 {
+            font-family: "Oswald", sans-serif;
+            font-weight: bold;
+            font-size: 3em;
+            color: var(--grey);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--grey);
+            font-size: 1.3em;
+            transition: font-size 0.5s;
+        }
+
+        a:hover {
+            font-size: 1.4em;
+        }
+
+        #map {
+            height: 20em;
+            width: 50em;
+            margin-bottom: 5em;
+            border: 0;
+        }
+}
 }

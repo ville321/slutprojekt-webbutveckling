@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap");
+:root {
+  --grey: rgb(51, 51, 51);
+}
+
 body {
   margin: 0;
 }
@@ -52,13 +57,13 @@ body {
   background: white;
 }
 .sticky a, #gallery-nav a {
-  color: black;
+  color: var(--grey);
 }
 .sticky span, #gallery-nav span {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--grey);
 }
 .sticky #book, #gallery-nav #book {
-  border: black solid 1px;
+  border: var(--grey) solid 1px;
 }
 
 .sticky {
@@ -72,4 +77,58 @@ body {
 #gallery img {
   max-width: 100%;
   height: auto;
+}
+
+section .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+section .info {
+  width: 30em;
+  padding-right: 3em;
+}
+section img {
+  max-width: 30em;
+  height: auto;
+}
+section h1, section p {
+  font-family: "Sorts Mill Goudy", serif;
+}
+
+footer {
+  margin-top: 10em;
+}
+footer .contact-content, footer .contact-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .contact-content .contact-content, footer .contact-links .contact-content {
+  border: 3px solid black;
+}
+footer .contact-content h1, footer .contact-content p, footer .contact-links h1, footer .contact-links p {
+  font-family: "Sorts Mill Goudy", serif;
+}
+footer .contact-content h1, footer .contact-links h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: var(--grey);
+}
+footer .contact-content a, footer .contact-links a {
+  text-decoration: none;
+  color: var(--grey);
+  font-size: 1.3em;
+  transition: font-size 0.5s;
+}
+footer .contact-content a:hover, footer .contact-links a:hover {
+  font-size: 1.4em;
+}
+footer .contact-content #map, footer .contact-links #map {
+  height: 20em;
+  width: 50em;
+  margin-bottom: 5em;
+  border: 0;
 }/*# sourceMappingURL=style.css.map */
