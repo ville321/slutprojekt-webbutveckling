@@ -25,7 +25,7 @@ body {
   max-height: 15%;
 }
 
-#gallery-nav, .navbar {
+.white-nav, .navbar {
   transition: max-height 0.8s, background-color 0.8s;
 }
 
@@ -53,16 +53,16 @@ body {
   padding-bottom: 1em;
 }
 
-.sticky, #gallery-nav {
+.sticky, .white-nav {
   background: white;
 }
-.sticky a, #gallery-nav a {
+.sticky a, .white-nav a {
   color: var(--grey);
 }
-.sticky span, #gallery-nav span {
+.sticky span, .white-nav span {
   border-bottom: 1px solid var(--grey);
 }
-.sticky #book, #gallery-nav #book {
+.sticky #book, .white-nav #book {
   border: var(--grey) solid 1px;
 }
 
@@ -92,43 +92,48 @@ section img {
   max-width: 30em;
   height: auto;
 }
-section h1, section p {
+section h2, section p {
   font-family: "Sorts Mill Goudy", serif;
 }
 
 footer {
   margin-top: 10em;
 }
-footer .contact-content, footer .contact-links {
+footer .contact-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-footer .contact-content .contact-content, footer .contact-links .contact-content {
-  border: 3px solid black;
-}
-footer .contact-content h1, footer .contact-content p, footer .contact-links h1, footer .contact-links p {
+footer h2, footer p {
   font-family: "Sorts Mill Goudy", serif;
 }
-footer .contact-content h1, footer .contact-links h1 {
+footer h2 {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-size: 3em;
   color: var(--grey);
 }
-footer .contact-content a, footer .contact-links a {
+footer a {
   text-decoration: none;
   color: var(--grey);
   font-size: 1.3em;
   transition: font-size 0.5s;
 }
-footer .contact-content a:hover, footer .contact-links a:hover {
+footer a:hover {
   font-size: 1.4em;
 }
-footer .contact-content #map, footer .contact-links #map {
+footer #map {
   height: 20em;
   width: 50em;
   margin-bottom: 5em;
   border: 0;
+}
+
+#contact-img {
+  margin: 0;
+}
+#contact-img img {
+  max-width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */

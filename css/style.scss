@@ -26,7 +26,7 @@ body {
     max-height: 15%;
 }
 
-#gallery-nav, .navbar {
+.white-nav, .navbar {
     transition: max-height 0.8s, background-color 0.8s;
 }
 
@@ -58,7 +58,7 @@ body {
     }
 }
 
-.sticky, #gallery-nav {
+.sticky, .white-nav {
     background: white;
 
     a {
@@ -106,7 +106,7 @@ section {
         height: auto;
     }
 
-    h1, p {
+    h2, p {
         font-family: "Sorts Mill Goudy", serif;
     }
 }
@@ -114,21 +114,18 @@ section {
 footer {
     margin-top: 10em;
 
-    .contact-content, .contact-links {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    .contact-content {
-        border: 3px solid black;
+    .contact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
     
-        h1, p {
+        h2, p {
             font-family: "Sorts Mill Goudy", serif;
         }
 
-        h1 {
+        h2 {
             font-family: "Oswald", sans-serif;
             font-weight: bold;
             font-size: 3em;
@@ -153,4 +150,11 @@ footer {
             border: 0;
         }
 }
+
+#contact-img {
+    margin: 0;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
