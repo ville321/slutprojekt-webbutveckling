@@ -37,6 +37,7 @@ body {
     list-style: none;
 
     a {
+        font-family: 'Cutive Mono';
         text-decoration: none;
         margin: 1.5em;
         color: white;
@@ -120,7 +121,6 @@ footer {
     .contact-links {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
@@ -184,4 +184,51 @@ footer {
         cursor: pointer;
     }
 
+}
+
+
+main {
+
+    .hero,
+    .menu-links,
+    .button-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2,
+    a {
+        font-family: 'Cutive Mono';
+    }
+
+    .hero {
+        background-image: url("../images/menu-img.jpg");
+        background-size: cover;
+        height: 100vh;
+
+        h2 {
+            color: white;
+            font-size: 4em;
+        }
+    }
+
+    .menu-links {
+        flex-direction: column;
+        margin-top: 10em;
+
+        .button-wrap {
+            background: black;
+            margin: .5em;
+            width: 30%;
+            padding: 1em;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
 }

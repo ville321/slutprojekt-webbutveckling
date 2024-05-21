@@ -9,3 +9,13 @@ window.onscroll = function () {
 function BookConfirmation() {
     alert("Du har bokat bord.")
 }
+
+function MenuMessage() {
+    alert("Den här menyn är inte tillgänglig för tillfället.")
+}
+
+const menuButtons = document.querySelectorAll(".button-wrap")
+
+menuButtons.forEach(button => {
+    button.addEventListener('click', MenuMessage)
+})

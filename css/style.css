@@ -36,6 +36,7 @@ body {
   list-style: none;
 }
 .nav-links a {
+  font-family: "Cutive Mono";
   text-decoration: none;
   margin: 1.5em;
   color: white;
@@ -108,7 +109,6 @@ footer {
 footer .contact-links {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 footer h2,
@@ -162,4 +162,41 @@ footer #map {
   font-family: "Sorts Mill Goudy", serif;
   font-size: 1.2em;
   cursor: pointer;
+}
+
+main .hero,
+main .menu-links,
+main .button-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main h2,
+main a {
+  font-family: "Cutive Mono";
+}
+main .hero {
+  background-image: url("../images/menu-img.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+main .hero h2 {
+  color: white;
+  font-size: 4em;
+}
+main .menu-links {
+  flex-direction: column;
+  margin-top: 10em;
+}
+main .menu-links .button-wrap {
+  background: black;
+  margin: 0.5em;
+  width: 30%;
+  padding: 1em;
+  cursor: pointer;
+}
+main .menu-links .button-wrap a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
