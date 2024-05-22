@@ -163,29 +163,48 @@ footer {
         height: auto;
     }
 }
-
 .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15em;
+    width: 50%;
+    margin: 10em auto;
 
-    label,
     h1 {
-        font-family: "Sorts Mill Goudy", serif;
+        text-align: center;
+        font-family: 'Cutive Mono';
     }
 
-    #submitButton {
-        padding: 0em 1.5em;
-        border: var(--grey) solid 1px;
-        background: transparent;
-        font-family: "Sorts Mill Goudy", serif;
-        font-size: 1.2em;
-        cursor: pointer;
-    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
 
+        .form-group {
+            flex: 1 1 calc(50% - 20px);
+            min-width: 200px;
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input{
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+            }
+
+            #submitButton {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                background-color: black;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+        }
+    }
 }
-
 
 main {
 

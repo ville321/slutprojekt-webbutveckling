@@ -19,3 +19,7 @@ const menuButtons = document.querySelectorAll(".button-wrap")
 menuButtons.forEach(button => {
     button.addEventListener('click', MenuMessage)
 })
+
+function adminMode() {
+    document.querySelector(".admin-mode").classList.toggle("hidden")
+}

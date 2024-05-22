@@ -146,21 +146,38 @@ footer #map {
 }
 
 .form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15em;
+  width: 50%;
+  margin: 10em auto;
 }
-.form-container label,
 .form-container h1 {
-  font-family: "Sorts Mill Goudy", serif;
+  text-align: center;
+  font-family: "Cutive Mono";
 }
-.form-container #submitButton {
-  padding: 0em 1.5em;
-  border: var(--grey) solid 1px;
-  background: transparent;
-  font-family: "Sorts Mill Goudy", serif;
-  font-size: 1.2em;
+.form-container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.form-container form .form-group {
+  flex: 1 1 calc(50% - 20px);
+  min-width: 200px;
+}
+.form-container form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-container form .form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.form-container form .form-group #submitButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
   cursor: pointer;
 }
 
