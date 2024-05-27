@@ -20,6 +20,8 @@ menuButtons.forEach(button => {
     button.addEventListener('click', MenuMessage)
 })
 
-function adminMode() {
-    document.querySelector(".admin-mode").classList.toggle("hidden")
-}
+let hamburgerButton = document.getElementById("hamburger")
+
+hamburgerButton.addEventListener("click", ()=> {
+    document.querySelector(".nav-links").classList.toggle("hidden")
+})

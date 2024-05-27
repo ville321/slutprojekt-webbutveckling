@@ -13,6 +13,7 @@ body {
 .main-nav-container {
     background-image: url(../images/bg1.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }
 
@@ -22,6 +23,8 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    margin: 0;
+    padding: 0;
     z-index: 1000;
     max-height: 15%;
 }
@@ -29,6 +32,10 @@ body {
 .white-nav,
 .navbar {
     transition: max-height 0.8s, background-color 0.8s;
+}
+
+.hamburger {
+    display: none;
 }
 
 .nav-links {
@@ -105,7 +112,7 @@ section {
     }
 
     img {
-        max-width: 30em;
+        max-width: 80%;
         height: auto;
     }
 
@@ -149,7 +156,7 @@ footer {
 
     #map {
         height: 20em;
-        width: 50em;
+        width: 25%;
         margin-bottom: 5em;
         border: 0;
     }
@@ -251,3 +258,28 @@ main {
         }
     }
 }
+
+@media only screen and (max-width: 900px) {
+
+    .link {
+        display: none;
+    }
+
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 1em;
+        top: .5em;
+        cursor: pointer;
+
+        div {
+            width: 30px;
+            height: 3px;
+            background: white;
+            margin: 5px 0;
+            border-radius: 5em;
+        }
+    }
+}
+
