@@ -1,3 +1,4 @@
+
 window.onscroll = function () {
     if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
         document.querySelector(".navbar").classList.add("sticky");
@@ -25,18 +26,22 @@ function toggleHidden(orgClass, newClass) {
 
 }
 
-if (window.innerWidth < 900 || window.innerWidth > 900) {
-    toggleHidden(".link", "hidden")
+function hideNavbar() {
+    if (window.innerWidth < 900) {
+        document.querySelectorAll(".link").forEach(link => { link.classList.add("hidden") })
+
+    } else {
+        document.querySelectorAll(".link").forEach(link => { link.classList.remove("hidden") })
+    }
 }
 
-if (window.innerWidth > 900) {
-    toggleHidden(".hamburger-nav", "hidden")
-}
+window.onload = () => { hideNavbar() }
+window.onresize = () => { hideNavbar() }
 
 let hamburgerButton = document.getElementById("hamburger")
 
 hamburgerButton.addEventListener("click", () => {
     toggleHidden(".hamburger-nav", "hidden")
-
+    document.querySelector(".navbar").classList.toggle("menu-active")
 })
 

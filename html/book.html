@@ -11,12 +11,29 @@
 <body>
     <nav class="navbar white-nav">
         <ul class="nav-links">
-            <li><a href="index.html">HEM</a></li>
-            <li><a href="menu.html">MENY</a></li>
-            <li><a href="gallery.html">GALLERI</a></li>
+            <li class="link"><a href="index.html">HEM</a></li>
+            <li class="link"><a href="menu.html">MENY</a></li>
+            <li class="link"><a href="gallery.html">GALLERI</a></li>
             <li class="logo">
                 <h1><a href="index.html">rÅVAra</a></h1>
             </li>
+            <li>
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </li>
+            <li class="link"><a href="contact.html">KONTAKT</a></li>
+            <li class="link" id="book"><a href="book.html">BOKA BORD</a></li>
+        </ul>
+    </nav>
+
+    <nav class="hamburger-nav hidden">
+        <ul class="nav-links">
+            <li><a href="index.html"><span>HEM</span></a></li>
+            <li><a href="menu.html">MENY</a></li>
+            <li><a href="gallery.html">GALLERI</a></li>
             <li><a href="contact.html">KONTAKT</a></li>
             <li id="book"><a href="book.html">BOKA BORD</a></li>
         </ul>
@@ -29,32 +46,32 @@
                 <label for="name">Namn:</label>
                 <input type="text" name="name" required>
             </div>
-    
+
             <div class="form-group">
                 <label for="email">E-post:</label>
                 <input type="email" name="email" required>
             </div>
-    
+
             <div class="form-group">
                 <label for="phone">Telefonnummer:</label>
                 <input type="tel" name="phone" required>
             </div>
-    
+
             <div class="form-group">
                 <label for="date">Datum:</label>
                 <input type="date" name="date" required>
             </div>
-    
+
             <div class="form-group">
                 <label for="time">Tid:</label>
                 <input type="time" name="time" required>
             </div>
-    
+
             <div class="form-group">
                 <label for="number">Antal gäster:</label>
                 <input type="number" name="number" min="1" max="6" required>
             </div>
-    
+
             <div class="form-group">
                 <input id="submitButton" type="submit" value="Boka Bord">
             </div>

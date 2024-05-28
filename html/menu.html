@@ -9,14 +9,31 @@
 </head>
 
 <body>
-    <nav class="navbar white-nav">
+    <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="index.html">HEM</a></li>
-            <li><a href="menu.html"><span>MENY</span></a></li>
-            <li><a href="gallery.html">GALLERI</a></li>
+            <li class="link"><a href="index.html">HEM</a></li>
+            <li class="link"><a href="menu.html"><span>MENY</span></a></li>
+            <li class="link"><a href="gallery.html">GALLERI</a></li>
             <li class="logo">
                 <h1><a href="index.html">rÅVAra</a></h1>
             </li>
+            <li>
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </li>
+            <li class="link"><a href="contact.html">KONTAKT</a></li>
+            <li class="link" id="book"><a href="book.html">BOKA BORD</a></li>
+        </ul>
+    </nav>
+
+    <nav class="hamburger-nav hidden">
+        <ul class="nav-links">
+            <li><a href="index.html"><span>HEM</span></a></li>
+            <li><a href="menu.html">MENY</a></li>
+            <li><a href="gallery.html">GALLERI</a></li>
             <li><a href="contact.html">KONTAKT</a></li>
             <li id="book"><a href="book.html">BOKA BORD</a></li>
         </ul>

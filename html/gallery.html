@@ -1,58 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rÅVAra</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <nav class="navbar white-nav">
         <ul class="nav-links">
-            <li><a href="index.html">HEM</a></li>
+            <li class="link"><a href="index.html">HEM</a></li>
+            <li class="link"><a href="menu.html">MENY</a></li>
+            <li class="link"><a href="gallery.html"><span>GALLERI</span></a></li>
+            <li class="logo">
+                <h1><a href="index.html">rÅVAra</a></h1>
+            </li>
+            <li>
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </li>
+            <li class="link"><a href="contact.html">KONTAKT</a></li>
+            <li class="link" id="book"><a href="book.html">BOKA BORD</a></li>
+        </ul>
+    </nav>
+
+    <nav class="hamburger-nav hidden">
+        <ul class="nav-links">
+            <li><a href="index.html"><span>HEM</span></a></li>
             <li><a href="menu.html">MENY</a></li>
-            <li><a href="gallery.html"><span>GALLERI</span></a></li>
-            <li class="logo"><h1><a href="index.html">rÅVAra</a></h1></li>            <li><a href="contact.html">KONTAKT</a></li>
+            <li><a href="gallery.html">GALLERI</a></li>
+            <li><a href="contact.html">KONTAKT</a></li>
             <li id="book"><a href="book.html">BOKA BORD</a></li>
         </ul>
     </nav>
 
 
-<div id="gallery">
-    <figure>
-        <img src="../images/gallery/gallery (1).jpg" alt="" loading="lazy">
-    </figure>
-    <figure>
-        <img src="../images/gallery/gallery (2).jpg" alt="" loading="lazy">
-    </figure>
-    <figure>
-        <img src="../images/gallery/gallery (3).jpg" alt="" loading="lazy">
-    </figure>
-    <figure>
-        <img src="../images/gallery/gallery (4).jpg" alt="" loading="lazy">
-    </figure>
-    <figure>
-        <img src="../images/gallery/gallery (5).jpg" alt="" loading="lazy">
-    </figure>
-    <figure>
-        <img src="../images/gallery/gallery (6).jpg" alt="" loading="lazy">
-    </figure>
-    <figure>
-        <img src="../images/gallery/gallery (7).jpg" alt="" loading="lazy">
-    </figure>
-</div>
-
-<footer>
-    <div class="contact-links">
-        <h2>rÅVAra</h2>
-        <p class="contact-info"><a target="_blank" href="https://www.instagram.com/avagymnasiumtaby/?hl=sv">Instagram</a></p>
-        <p class="contact-info"><a target="_blank" href="https://www.taby.se/ava">Åva Gymnasium</a></p>
-        <p class="contact-info"><a href="mailto:bokningar@ravararestaurang.se">bokningar@ravararestaurang.se</a></p>
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4057.1268668913917!2d18.062087916918955!3d59.44035540725552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9b93802656b1%3A0x1a1ad5d690f3928b!2zw4V2YSBza29sZ3LDpG5kIDEtMywgMTgzIDE0IFTDpGJ5!5e0!3m2!1ssv!2sse!4v1715848375894!5m2!1ssv!2sse" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="gallery">
+        <figure>
+            <img src="../images/gallery/gallery (1).jpg" alt="" loading="lazy">
+        </figure>
+        <figure>
+            <img src="../images/gallery/gallery (2).jpg" alt="" loading="lazy">
+        </figure>
+        <figure>
+            <img src="../images/gallery/gallery (3).jpg" alt="" loading="lazy">
+        </figure>
+        <figure>
+            <img src="../images/gallery/gallery (4).jpg" alt="" loading="lazy">
+        </figure>
+        <figure>
+            <img src="../images/gallery/gallery (5).jpg" alt="" loading="lazy">
+        </figure>
+        <figure>
+            <img src="../images/gallery/gallery (6).jpg" alt="" loading="lazy">
+        </figure>
+        <figure>
+            <img src="../images/gallery/gallery (7).jpg" alt="" loading="lazy">
+        </figure>
     </div>
-</footer>
 
-<script src="../script/script.js"></script>
+    <footer>
+        <div class="contact-links">
+            <h2>rÅVAra</h2>
+            <p class="contact-info"><a target="_blank"
+                    href="https://www.instagram.com/avagymnasiumtaby/?hl=sv">Instagram</a></p>
+            <p class="contact-info"><a target="_blank" href="https://www.taby.se/ava">Åva Gymnasium</a></p>
+            <p class="contact-info"><a href="mailto:bokningar@ravararestaurang.se">bokningar@ravararestaurang.se</a></p>
+            <iframe id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4057.1268668913917!2d18.062087916918955!3d59.44035540725552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9b93802656b1%3A0x1a1ad5d690f3928b!2zw4V2YSBza29sZ3LDpG5kIDEtMywgMTgzIDE0IFTDpGJ5!5e0!3m2!1ssv!2sse!4v1715848375894!5m2!1ssv!2sse"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
 
 </body>
+
 </html>

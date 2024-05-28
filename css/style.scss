@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 
-:root {
-    --grey: rgb(51, 51, 51);
-}
-
 body {
     margin: 0;
 }
@@ -70,15 +66,15 @@ body {
     background: white;
 
     a {
-        color: var(--grey);
+        color: black;
     }
 
     span {
-        border-bottom: 1px solid var(--grey);
+        border-bottom: 1px solid black;
     }
 
     #book {
-        border: var(--grey) solid 1px;
+        border: black solid 1px;
     }
 
     #hamburger {
@@ -144,12 +140,12 @@ footer {
         font-family: "Oswald", sans-serif;
         font-weight: bold;
         font-size: 3em;
-        color: var(--grey);
+        color: black;
     }
 
     a {
         text-decoration: none;
-        color: var(--grey);
+        color: black;
         font-size: 1.3em;
         transition: font-size 0.5s;
     }
@@ -295,8 +291,19 @@ main {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
+
+.menu-active {
+    .logo a {
+        color: black;
+    }
+
+    #hamburger div {
+        background: black;
+    }
+}
+
 
 .hamburger-nav {
     display: flex;
