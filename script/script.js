@@ -20,8 +20,23 @@ menuButtons.forEach(button => {
     button.addEventListener('click', MenuMessage)
 })
 
+function toggleHidden(orgClass, newClass) {
+    document.querySelectorAll(orgClass).forEach(link => { link.classList.toggle(newClass) })
+
+}
+
+if (window.innerWidth < 900 || window.innerWidth > 900) {
+    toggleHidden(".link", "hidden")
+}
+
+if (window.innerWidth > 900) {
+    toggleHidden(".hamburger-nav", "hidden")
+}
+
 let hamburgerButton = document.getElementById("hamburger")
 
-hamburgerButton.addEventListener("click", ()=> {
-    document.querySelector(".nav-links").classList.toggle("hidden")
+hamburgerButton.addEventListener("click", () => {
+    toggleHidden(".hamburger-nav", "hidden")
+
 })
+

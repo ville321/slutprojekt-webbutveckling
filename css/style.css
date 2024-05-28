@@ -22,8 +22,6 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  margin: 0;
-  padding: 0;
   z-index: 1000;
   max-height: 15%;
 }
@@ -33,7 +31,7 @@ body {
   transition: max-height 0.8s, background-color 0.8s;
 }
 
-.hamburger {
+#hamburger {
   display: none;
 }
 
@@ -78,6 +76,10 @@ body {
 .white-nav #book {
   border: var(--grey) solid 1px;
 }
+.sticky #hamburger div,
+.white-nav #hamburger div {
+  background: black;
+}
 
 .sticky {
   max-height: 10%;
@@ -98,11 +100,11 @@ section .container {
   margin-top: 5em;
 }
 section .info {
-  width: 30em;
+  max-width: 25em;
   padding-right: 3em;
 }
 section img {
-  max-width: 80%;
+  max-width: 30vw;
   height: auto;
 }
 section h2,
@@ -139,7 +141,7 @@ footer a:hover {
 }
 footer #map {
   height: 20em;
-  width: 25%;
+  width: 50vw;
   margin-bottom: 5em;
   border: 0;
 }
@@ -226,15 +228,9 @@ main .menu-links .button-wrap a {
 }
 
 @media only screen and (max-width: 900px) {
-  .link {
-    display: none;
-  }
   #hamburger {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    right: 1em;
-    top: 0.5em;
     cursor: pointer;
   }
   #hamburger div {
@@ -244,4 +240,35 @@ main .menu-links .button-wrap a {
     margin: 5px 0;
     border-radius: 5em;
   }
+  section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .info {
+    padding: 0;
+    max-width: 80vw;
+  }
+}
+.hidden {
+  display: none;
+}
+
+.hamburger-nav {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  position: fixed;
+  top: 0;
+}
+.hamburger-nav ul {
+  flex-direction: column;
+  margin-top: 7em;
+}
+.hamburger-nav ul li {
+  margin: 2em;
+}
+.hamburger-nav ul a {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
