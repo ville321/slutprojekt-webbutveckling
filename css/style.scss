@@ -224,7 +224,7 @@ main {
         justify-content: center;
     }
 
-    h2,
+    h1,
     a {
         font-family: 'Cutive Mono';
     }
@@ -234,7 +234,7 @@ main {
         background-size: cover;
         height: 100vh;
 
-        h2 {
+        h1 {
             color: white;
             font-size: 4em;
         }
@@ -256,6 +256,27 @@ main {
                 color: white;
                 font-weight: bold;
             }
+        }
+    }
+
+    table {
+        margin: 5em auto;
+        text-align: left;
+        border: 1px solid black;
+        padding: 1em;
+
+        th, td {
+            font-family: 'Cutive mono'
+        }
+
+        .dark, tfoot {
+            background: black;
+            color: white;
+        }
+
+        tfoot {
+            font-weight: bold;
+            font-style: italic;
         }
     }
 }
@@ -313,6 +334,10 @@ main {
     background: white;
     position: fixed;
     top: 0;
+
+    .nav-links {
+        padding: 0;
+    }
 
     ul {
         flex-direction: column;

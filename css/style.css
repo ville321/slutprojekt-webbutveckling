@@ -193,7 +193,7 @@ main .button-wrap {
   align-items: center;
   justify-content: center;
 }
-main h2,
+main h1,
 main a {
   font-family: "Cutive Mono";
 }
@@ -202,7 +202,7 @@ main .hero {
   background-size: cover;
   height: 100vh;
 }
-main .hero h2 {
+main .hero h1 {
   color: white;
   font-size: 4em;
 }
@@ -221,6 +221,23 @@ main .menu-links .button-wrap a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+main table {
+  margin: 5em auto;
+  text-align: left;
+  border: 1px solid black;
+  padding: 1em;
+}
+main table th, main table td {
+  font-family: "Cutive mono";
+}
+main table .dark, main table tfoot {
+  background: black;
+  color: white;
+}
+main table tfoot {
+  font-weight: bold;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 900px) {
@@ -264,6 +281,9 @@ main .menu-links .button-wrap a {
   background: white;
   position: fixed;
   top: 0;
+}
+.hamburger-nav .nav-links {
+  padding: 0;
 }
 .hamburger-nav ul {
   flex-direction: column;
